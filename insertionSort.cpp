@@ -15,7 +15,7 @@ int main(int argc, const char * argv[]) {
     int size;
     std::cin >> size;
     
-    constexpr int length = size;
+    const int length = size;
     
     int numbers[length];
     
