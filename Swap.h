@@ -1,9 +1,7 @@
-#ifndef Swap_h
-#define Swap_h
+#pragma once
 
-void swap(int list[], int src, int dest){ 
+void swap(int list[], int src, int dst) {
     int temp = list[src];
-    list[src] = list[dest];
-    list[dest] = temp;
+    list[src] = list[dst];
+    list[dst] = temp;
 }
-#endif

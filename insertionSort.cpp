@@ -1,36 +1,36 @@
 #include <iostream>
 #include "InsertionSort.h"
 
-using namespace std;
-
-void display(int list[], int size, string message){
-    cout << message << endl;
+void display(int list[], int size, std::string message) {
+    std::cout << message << std::endl;
     
     for (int i = 0; i < size; i++) {
-        cout << list[i] << " ";
+        std::cout << list[i] << " ";
     }
     
-    cout << endl;
+    std::cout << std::endl;
 }
+
 int main(int argc, const char * argv[]) {
     int size;
-    cin >> size;
+    std::cin >> size;
     
-    const int len = size;
+    const int length = size;
     
-    int numbers[len];
+    int numbers[length];
     
-    for (int i = 0; i < len; i++) {
-        int curr;
-        cin >> curr;
+    for (int i = 0; i < length; i++) {
+        int current;
+        std::cin >> current;
         
-        numbers[i] = curr;
-    }   
-    display(numbers, len, "Before:");
+        numbers[i] = current;
+    }
     
-    insertion_sort(numbers, len);
+    display(numbers, length, "Before:");
     
-    display(numbers, len, "After:");
+    insertion_sort(numbers, length);
+    
+    display(numbers, length, "After:");
  
     return 0;
 }
