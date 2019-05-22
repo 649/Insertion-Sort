@@ -2,7 +2,7 @@
 
 > Author: [@037](https://twitter.com/037)
 
-Compile:
+### Compile
 ```
 sudo g++ -std=c++11 -o InsertionSort.exe InsertionSort.cpp
 ```
